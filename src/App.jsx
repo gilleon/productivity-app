@@ -1,9 +1,11 @@
-import Sidebar from "./component/Sidebar";
+import NewProject from "./component/new_project/NewProject";
+import Sidebar from "./component/sidebar/Sidebar";
 
 function App() {
   return (
-    <main className="h-screen my-8">
+    <main className="h-screen my-8 flex gap-8">
       <Sidebar />
+      <NewProject />
     </main>
   );
 }
