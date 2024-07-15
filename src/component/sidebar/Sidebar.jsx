@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../inputs/Button";
 
 export default function Sidebar() {
   return (
@@ -7,9 +8,7 @@ export default function Sidebar() {
         My Projects
       </h2>
       <div>
-        <button className="px-4 py-2 text-xs md:text-base rounded-md bg-stone-700 text-stone-400 hover:text-stone-100 hover:bg-stone-600   ">
-          + Add Project
-        </button>
+        <Button>+ Create new project</Button>
       </div>
       <ul>
         <li></li>
