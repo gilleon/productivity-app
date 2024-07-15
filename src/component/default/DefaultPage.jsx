@@ -1,8 +1,8 @@
 import React from "react";
-import logo from "../../assets/no-project.png";
+import logo from "../../assets/no-projects.png";
 import Button from "../inputs/Button";
 
-export default function DefaultPage() {
+export default function DefaultPage({ onAddProject }) {
   return (
     <div className="mt-24 text-center w-2/3">
       <img
@@ -15,7 +15,7 @@ export default function DefaultPage() {
         Select a project or get started with a new one
       </p>
       <p className="mt-8">
-        <Button>Create new Project</Button>
+        <Button onClick={onAddProject}>Create new Project</Button>
       </p>
     </div>
   );
